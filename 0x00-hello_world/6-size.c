@@ -1,19 +1,15 @@
-#include<stdio.h>
-#include<conio.h>
+#include <stdio.h>
 /**
-* main - Entry point
-*
-* Return: Always 0 (Success)
-*/
-void main(void)
+ * main - Entry point
+ * print size of variables
+ * Return: Always 0 (Success)
+ */
+int main(void)
 {
-clrscr();
-printf(“TypettttSize(bytes)”);
-printf(“nCharacterttt    % d”, sizeof(char));
-printf(“nIntegertttt    % d”, sizeof(int));
-printf(“nLong intttt    % d”, sizeof(long int));
-printf(“nFloattttt    % d”, sizeof(float));
-printf(“nDoubletttt    % d”, sizeof(double));
-printf(“nLong doublettt    % d”, sizeof(long double));
-getch();
+printf("Size of a char: %i byte(s)\n", sizeof(char));
+printf("Size of an int: %i byte(s)\n", sizeof(int));
+printf("Size of a long int: %i byte(s)\n", sizeof(long));
+printf("Size of a long long int: %i byte(s)\n", sizeof(long long));
+printf("Size of a float: %i byte(s)\n", sizeof(float));
+return (0);
 }
