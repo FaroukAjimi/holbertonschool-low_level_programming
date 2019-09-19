@@ -1,19 +1,20 @@
 #include <stdio.h>
 /**
  * main - Entry point
- * Last digits
+ * print_alphabet
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-char x;
-x = 48;
-while (x <= 57)
+int n;
+for (n = 48; n <= 57; n++)
 {
-putchar(x);
-x = x + 1;
+putchar(n);
+if (n != '9')
+{
 putchar(',');
 putchar(' ');
+}
 }
 putchar('\n');
 return (0);
