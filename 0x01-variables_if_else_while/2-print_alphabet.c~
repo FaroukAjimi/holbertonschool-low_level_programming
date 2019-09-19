@@ -1,0 +1,19 @@
+#include <stdio.h>
+/**
+ *i will count
+ *from a to
+ *z
+ */
+int main(void)
+{
+char wow;
+wow='a';
+while (wow <= 'z')
+{
+putchar(wow);
+wow++;
+}
+putchar("\n");
+return (0);
+}
+
