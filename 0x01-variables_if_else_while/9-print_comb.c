@@ -7,14 +7,14 @@
 int main(void)
 {
 char x;
-x = '0';
-while (x < '9')
+x = 48;
+while (x < 57)
 {
 putchar(x);
 x = x + 1;
 putchar(',');
 putchar(' ');
 }
-putchar('9');
+putchar(57);
 return (0);
 }
