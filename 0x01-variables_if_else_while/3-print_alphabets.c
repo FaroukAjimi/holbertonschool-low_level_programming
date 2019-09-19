@@ -14,11 +14,11 @@ putchar(WoW);
 WoW++;
 }
 WoW = 'A';
-while (WoW <='Z')
+while (WoW <= 'Z')
 {
 putchar(WoW);
 WoW++;
-}  
+}
 putchar('\n');
 return (0);
 }
