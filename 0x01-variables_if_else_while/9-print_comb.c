@@ -8,13 +8,13 @@ int main(void)
 {
 char x;
 x = 48;
-while (x < 57)
+while (x <= 57)
 {
 putchar(x);
 x = x + 1;
 putchar(',');
 putchar(' ');
 }
-putchar(57);
+putchar('\n');
 return (0);
 }
