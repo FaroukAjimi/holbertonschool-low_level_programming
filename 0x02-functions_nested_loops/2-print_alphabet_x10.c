@@ -19,4 +19,5 @@ x = x + 1;
 x = 'a';
 _putchar ('\n');
 }
+return (0);
 }
