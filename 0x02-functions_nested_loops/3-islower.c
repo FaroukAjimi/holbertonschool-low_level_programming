@@ -1,8 +1,8 @@
-#0include "holberton.h"
+#include "holberton.h"
 /**
  * _islower - hello betty
  *@c: dfdfdfd
- * Return:dfdfdfdfdf
+ * Return: Description of the returned value
  */
 int _islower(int c)
 {
