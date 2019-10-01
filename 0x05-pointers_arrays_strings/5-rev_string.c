@@ -15,13 +15,8 @@ while ((*(s + i) != '\0'))
 {
 	i++;
 }
-if (i % 2 == 0)
-{
 	z = i / 2;
-}
-else
-	z = (i + 1) / 2;
-while ((*(s + j) != s[z]))
+while ((j <= z))
 {
 	aux = s[j];
 	s[j] = s[i - 1];
