@@ -15,12 +15,13 @@ while ((*(s + i) != '\0'))
 {
 	i++;
 }
+i--;
 	z = i / 2;
 while ((j <= z))
 {
 	aux = s[j];
-	s[j] = s[i - 1];
-	s[i - 1] = aux;
+	s[j] = s[i];
+	s[i] = aux;
 	j++;
 	i--;
 }
