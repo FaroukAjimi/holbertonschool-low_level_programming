@@ -2,14 +2,16 @@
 #include <stdio.h>
 
 /**
- * main - check the code for Holberton School students.
- *
+ * _strchr - check the code for Holberton School students.
+ *@s:fdkjfdf
+ *@c: fdhdskljsjd
  * Return: Always 0.
  */
 char *_strchr(char *s, char c)
 {
-	int i=0;
-	int y=0;
+	int i = 0;
+	int y = 0;
+
 	while (s[i] != '\0')
 	{
 		i++;
