@@ -1,32 +1,24 @@
 #include "holberton.h"
+#include <stddef.h>
 /**
- * _strstr - strings
- * @haystack: later
- * @needle: google
+ * _strpbrk -fhwqgq
+ * @s: qfqrgqd
+ * @accept: qfhdsfbsd
  *
- * Return: rotle dfds
+ * Return: a pointer to the byte in s that matches one of the bytes in accept
  */
-char *_strstr(char *haystack, char *needle)
+char *_strpbrk(char *s, char *accept)
 {
-char *h = haystack;
-char *n = needle;
+unsigned int i;
+unsigned int j;
 
-while (*h)
-n = needle;
-h = haystack;
-while (*n)
+for (i = 0; s[i] != '\0'; i++)
 {
-if (*h == *n)
+for (j = 0; accept[j] != '\0'; j++)
 {
-n++;
-h++;
+if (s[i] == accept[j])
+	return (&s[i]);
 }
-else
-break;
 }
-if (*n == '\0')
-return (haystack);
-haystack++;
-}
-return (0);
+return (NULL);
 }
