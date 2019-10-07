@@ -1,20 +1,22 @@
 #include "holberton.h"
 
 /**
- * main - check the code for Holberton School students.
- *
+ * _strpbrk - check the code for Holberton School students.
+ *@s:fdjfjdkfd
+ *@accept: gjdhfkldjf
  * Return: Always 0.
  */
 char *_strpbrk(char *s, char *accept)
 {
-	int i=0;
-	int y=0;
-	int z=0;
+	int i = 0;
+	int y = 0;
+	int z = 0;
+
 	while (s[i] != '\0')
 		i++;
 	while (y <= i)
 	{
-		z=0;
+		z = 0;
 		while (z <= i)
 		{
 			if (s[y] == accept[z])
@@ -23,5 +25,5 @@ char *_strpbrk(char *s, char *accept)
 		}
 		y++;
 	}
-			return 0;
+	return (0);
 }
