@@ -1,11 +1,10 @@
 #include "holberton.h"
 /**
- * _strstr - a function that locates a substring
- * @haystack: locate a substring
- * @needle: substring to locate
+ * _strstr - dsffsdfsdf
+ * @haystack: gfsdgdsgsdfg
+ * @needle: fdfdfdfdf
  *
- * Return: pointer to the beginning of the located substring,
- * or NULL, if substring is not found
+ * Return: Always
  */
 char *_strstr(char *haystack, char *needle)
 {
