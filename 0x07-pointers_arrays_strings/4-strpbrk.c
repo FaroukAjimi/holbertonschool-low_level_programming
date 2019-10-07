@@ -8,8 +8,8 @@
  */
 char *_strpbrk(char *s, char *accept)
 {
-	int i = 0;
-	int y = 0;
+	unsigned int i = 0;
+	unsigned int y = 0;
 	int z = 0;
 
 	while (s[i] != '\0')
