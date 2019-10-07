@@ -1,29 +1,24 @@
 #include "holberton.h"
-
+#include <stddef.h>
 /**
- * _strpbrk - check the code for Holberton School students.
- *@s:fdjfjdkfd
- *@accept: gjdhfkldjf
- * Return: Always 0.
+ * _strpbrk - fqsdfqsdfsqdfqsdf
+ * @s:fdssdfqsdfqfqs
+ * @accept: fsfdsqdq
+ *
+ * Return: a pointer to the byte in s that matches one of the bytes in accept
  */
 char *_strpbrk(char *s, char *accept)
 {
-	unsigned int i = 0;
-	unsigned int y = 0;
-	int z = 0;
+unsigned int i;
+unsigned int j;
 
-	while (s[i] != '\0')
-		i++;
-	while (y <= i)
-	{
-		z = 0;
-		while (z <= i)
-		{
-			if (s[y] == accept[z])
-				return (&s[y]);
-			z++;
-		}
-		y++;
-	}
-	return (0);
+for (i = 0; s[i] != '\0'; i++)
+{
+for (j = 0; accept[j] != '\0'; j++)
+{
+if (s[i] == accept[j])
+	return (&s[i]);
+}
+}
+return (NULL);
 }
