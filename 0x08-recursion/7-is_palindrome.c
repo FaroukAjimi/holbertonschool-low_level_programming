@@ -26,7 +26,7 @@ int is_palindrome(char *s)
 	return (pal(s, len - 1, 0));
 }
 /**
- * pali - sdsdsds
+ * pal - sdsdsds
  * @s: sdsdsds
  * @len: dsdsdsds
  * @i: dfqdsfq
