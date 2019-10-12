@@ -1,5 +1,10 @@
 #include <stdio.h>
-
+/**
+ * main - Farouk
+ *@argc: fogof
+ *@argc: gdfdfd
+ *Return: gsdsd
+ */
 	int main (int argc, char *argv[])
 	{
 		int count;
