@@ -1,12 +1,16 @@
 #include <stdio.h>
 
 /**
- *
- *
- *
+ *main - hello
+ *@argc: arg1
+ *@argv: dsdsds
+ *Return: dsdsds
  */
 int main(int argc, char *argv[])
 {
-	argc = 0;
-	printf("%s\n", argv[argc]);
+	int i;
+
+	for (i = 0; i < argc; i++)
+	printf("%s\n", argv[i]);
+	return (0);
 }
