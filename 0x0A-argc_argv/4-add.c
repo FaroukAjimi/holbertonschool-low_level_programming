@@ -4,33 +4,27 @@
 /**
  *main - hello
  *@argc: NUM
- *@argv: array
+- *@argv: array
  *Return: 1 in case of error
  */
 int main(int argc, char *argv[])
 {
 	int count;
 	int val1;
-	int val;
+	int stock = 0;
 
 	if (argc - 1 >= 0)
 	{
-		for (count = 0; count < argc - 1; count++)
+		for (count = 0; count < argc - 1  ; count++)
 		{
-			val = atoi(argv[count + 1]);
-			val1 = atoi(argv[count]);
-			if (isdigit(val) == 0  && count >= 1)
-			{
-				printf("Error\n");
-				return (1);
-			}
+			val1 = atoi(argv[count + 1]);
+		0	stock = stock + val1;
 		}
-		printf("%d\n", val + val1);
+		printf("%d\n", stock);
 	}
 	else
 	{
 		printf("Error\n");
 		return (1);
 	}
-
 }
