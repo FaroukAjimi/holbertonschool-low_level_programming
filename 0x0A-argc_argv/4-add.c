@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <ctype.h>
+#include "holberton.h"
 /**
  *main - hello
  *@argc: NUM
@@ -15,16 +16,36 @@ int main(int argc, char *argv[])
 
 	if (argc - 1 >= 0)
 	{
-		for (count = 0; count < argc - 1  ; count++)
+		for (count = 1; count < argc ; count++)
 		{
-			val1 = atoi(argv[count + 1]);
-		0	stock = stock + val1;
+			if (number(argv[count]) == 0)
+			{
+			val1 = atoi(argv[count]);
+			stock = stock + val1;
+			}
+			else
+			{
+				printf("Error\n");
+				return(1);
+			}
 		}
-		printf("%d\n", stock);
 	}
-	else
+	printf("%d\n", stock);
+	return (0);
+}
+/**
+ *number - check if it's an integer
+ *@c: array
+ *Return: 0
+ */
+int number(char *c)
+{
+	int i = 0;
+	while (c[i] != '\0')
 	{
-		printf("Error\n");
-		return (1);
+		if (isdigit(c[i]) == 0)
+			return (1);
+		i++;
 	}
+	return (0);
 }
