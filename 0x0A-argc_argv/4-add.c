@@ -26,7 +26,7 @@ int main(int argc, char *argv[])
 			else
 			{
 				printf("Error\n");
-				return(1);
+				return (1);
 			}
 		}
 	}
@@ -41,6 +41,7 @@ int main(int argc, char *argv[])
 int number(char *c)
 {
 	int i = 0;
+
 	while (c[i] != '\0')
 	{
 		if (isdigit(c[i]) == 0)
