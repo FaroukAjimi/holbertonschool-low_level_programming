@@ -3,8 +3,9 @@
 #include <stdlib.h>
 
 /**
- * main - check the code for Holberton School students.
- *
+ * str_concat - check the code for Holberton School students.
+ *@s1: hello
+ *@s2: bye
  * Return: Always 0.
  */
 char *str_concat(char *s1, char *s2)
@@ -23,7 +24,7 @@ char *str_concat(char *s1, char *s2)
 	{
 		size2++;
 	}
-	s = malloc(sizeof(char) * (size1+size2));
+	s = malloc(sizeof(char) * (size1 + size2));
 	if (s == 0)
 		return (NULL);
 	if (size1 > 0 && size2 > 0)
@@ -39,8 +40,8 @@ char *str_concat(char *s1, char *s2)
 		i++;
 		y++;
 	}
-	s[i]='\0';
-	return(s);
+	s[i] = '\0';
+	return (s);
 	}
 	else
 		return (NULL);
