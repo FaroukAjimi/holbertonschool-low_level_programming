@@ -1,0 +1,42 @@
+#include "holberton.h"
+#include <stdio.h>
+#include <stdlib.h>
+
+/**
+ * print_grid - prints a grid of integers
+ * @grid: the address of the two dimensional grid
+ * @width: width of the grid
+ * @height: height of the grid
+ *
+ * Return: Nothing.
+ */
+int **alloc_grid(int width, int height)
+{
+
+	int **s;
+	int i = 0;
+	int x = 0;
+	int y = 0;
+
+	if (width <= 0 || height <= 0)
+		return (NULL);
+
+	s = malloc(sizeof(int *) * height);
+	if (s == NULL)
+		return (NULL);
+
+	for (; i < height; i++)
+	{
+		s[i] = malloc(sizeof(int) * width);
+		if (s[i] == NULL)
+		{
+			for (y = 0; y < i; y++)
+				s[y]=0;
+			
+			return (NULL);
+		}
+		for (x = 0; x < width; x++)
+			s[i][x] = 0;
+	}
+	return (s);
+}
