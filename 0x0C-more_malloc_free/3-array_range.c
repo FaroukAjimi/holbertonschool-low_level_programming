@@ -22,5 +22,6 @@ int *array_range(int min, int max)
 		min++;
 		i++;
 	}
+	s[i]='\0';
 	return (s);
 }
