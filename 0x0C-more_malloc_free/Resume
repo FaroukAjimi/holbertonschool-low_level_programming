@@ -1,0 +1,8 @@
+1-Stack
+a-region of computer that stores temporary variables created but each function including main
+b-LIFO (last in,first out)data structure
+mangaged and optimized by the CPU (processor) quite closely.
+c-renewable
+d-alocting memory is not by hand also you dont have to free it once you don't need it
+e-it has limits depending on the OS
+d-while the function is runing the 
