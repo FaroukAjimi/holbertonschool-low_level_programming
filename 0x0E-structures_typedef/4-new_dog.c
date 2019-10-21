@@ -8,14 +8,12 @@
 int _slen(char *s)
 {
 	int i = 0;
-	int c = 0;
 
 	while (s[i] != '\0')
 	{
-		c++;
 		i++;
 	}
-	return (0);
+	return (i);
 }
 /**
  * new_dog - check the code for Holberton School students.
