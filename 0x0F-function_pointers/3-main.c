@@ -9,9 +9,9 @@
  */
 int main(int argc, char *argv[])
 {
+	int c;
 	int a;
 	int b;
-	int c;
 
 	if (argc != 4)
 	{
