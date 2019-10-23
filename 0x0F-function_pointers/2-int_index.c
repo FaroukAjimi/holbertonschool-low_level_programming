@@ -1,9 +1,10 @@
 #include "function_pointers.h"
 /**
- *
- *
- *
- *
+ *int_index - int
+ *@array: uio
+ *@size: haj
+ *@cmp: pool
+ *Return: po
  */
 int int_index(int *array, int size, int (*cmp)(int))
 {
