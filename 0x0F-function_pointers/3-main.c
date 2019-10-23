@@ -22,15 +22,10 @@ int main(int argc, char *argv[])
 	op = get_op_func(argv[2]);
 	a = atoi(argv[1]);
 	b = atoi(argv[3]);
-	if (op == NULL || argv[2][1] != '\0')
+	if (op == NULL)
 	{
 		printf("Error\n");
 		exit(99);
-	}
-	if (b == 0 && (op == op_div || op == op_mod))
-	{
-		printf("Error\n");
-		exit(100);
 	}
 	c = op(a, b);
 	printf("%d\n", c);
