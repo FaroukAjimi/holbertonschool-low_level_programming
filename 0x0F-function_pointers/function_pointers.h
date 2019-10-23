@@ -1,3 +1,4 @@
+#include <stdlib.h>
 #ifndef FUNCTION_H
 #define FUNCTION_H
 void print_name(char *name, void (*f)(char *));
