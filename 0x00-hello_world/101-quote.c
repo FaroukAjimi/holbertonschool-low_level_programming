@@ -1,11 +1,13 @@
 #include <stdio.h>
+#include <unistd.h>
+#include <string.h>
 /**
- *hello
- *betty
- *holberton
+ *main - this is a main
+ *Return: 1
  */
 int main(void)
 {
-write("and that piece of art is useful\"- Dora Korpar, 2015-10-19", stderr);
-return (1);
+  char s[]="and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
+	write(1, s, strlen(s));
+	return (1);
 }
