@@ -1,9 +1,9 @@
 #include <stdio.h>
 #include <stdarg.h>
 /**
- *
- *
- *
+ *print_numbers - print
+ *@separator: google
+ *@n: number
  *
  */
 void print_numbers(const char *separator, const unsigned int n, ...)
