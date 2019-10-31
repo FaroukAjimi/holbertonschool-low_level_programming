@@ -1,13 +1,14 @@
 #include <stdio.h>
 #include "lists.h"
 /**
- *
- *
- *
+ *print_list - printer
+ *@h: oootl
+ *Return: ppo
  */
 size_t print_list(const list_t *h)
 {
-	unsigned int i = 0;
+	unsigned int i = 0;3
+
 	if (h == NULL)
 		return (0);
 	while (h != NULL)
