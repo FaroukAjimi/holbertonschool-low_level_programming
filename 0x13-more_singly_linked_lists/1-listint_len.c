@@ -4,19 +4,18 @@
 #include "lists.h"
 
 /**
- * print_listint - check the code for Holberton School students.
- *@h: kool
+ * listint_len - check the code for Holberton School students.
+ *@h: gill
  * Return: Always 0.
  */
-size_t print_listint(const listint_t *h)
+size_t listint_len(const listint_t *h)
 {
-	unsigned int i = 0;
+	unsigned int i;
 
 	if (h == NULL)
 		return (0);
 	while (h != NULL)
 	{
-		printf("%d\n", h->n);
 		h = h->next;
 		i++;
 	}
