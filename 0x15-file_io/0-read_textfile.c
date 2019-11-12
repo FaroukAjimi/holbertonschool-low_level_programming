@@ -24,10 +24,11 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	s = malloc(letters * sizeof(char));
 	if (s == NULL)
 		return (0);
+
 	p = read(fd, s, letters);
 	if (p == -1)
 		return (0);
-	s[p] = '\0';
+
 	w = write(STDOUT_FILENO, s, p);
 	if (w == -1 || p != w)
 		return (0);
