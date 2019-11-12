@@ -3,6 +3,5 @@ a-region of computer that stores temporary variables created but each function i
 b-LIFO (last in,first out)data structure
 mangaged and optimized by the CPU (processor) quite closely.
 c-renewable
-d-alocting memory is not by hand also you dont have to free it once you don't need it
+d-alocting memory is not by hand also you dont have to free it once you don't nne*ed it
 e-it has limits depending on the OS
-d-while the function is runing the 
