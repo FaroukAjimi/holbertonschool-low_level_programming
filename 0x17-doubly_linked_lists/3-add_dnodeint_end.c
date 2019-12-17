@@ -4,8 +4,8 @@
 #include "lists.h"
 
 /**
- * add_dnodeint_en - check the code for Holberton School students.
- *@head
+ * add_dnodeint_end - check the code for Holberton School students.
+ *@head: h
  *@n: gg
  * Return: Always EXIT_SUCCESS.
  */
