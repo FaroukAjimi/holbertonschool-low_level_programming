@@ -4,22 +4,31 @@
 #include "lists.h"
 
 /**
- * main - check the code for Holberton School students.
- *
+ * add_dnodeint_en - check the code for Holberton School students.
+ *@head
+ *@n: gg
  * Return: Always EXIT_SUCCESS.
  */
 dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 {
-	dlistint_t **tracer = head, *new;
+	dlistint_t *k = malloc(sizeof(dlistint_t));
+	dlistint_t *t = *head;
 
-	new = malloc(sizeof(dlistint_t));
-	if(!new)
-		return(0);
-	while (*tracer)
-		tracer = &(*tracer)->next;
-	new->n = n;
-	new->next = *tracer;
-	new->prev = ;
-	*tracer = new;
-	return (new);
+	if (k == NULL)
+		return (NULL);
+	k->n = n;
+	k->prev = NULL;
+	k->next = NULL;
+	if (*head == NULL)
+	{
+		*head = k;
+		return (*head);
+	}
+	while (t->next != NULL)
+	{
+		t = t->next;
+	}
+	k->prev = t;
+	t->next = k;
+	return (k);
 }
