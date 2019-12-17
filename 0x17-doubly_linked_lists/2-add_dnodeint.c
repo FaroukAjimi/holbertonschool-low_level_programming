@@ -8,12 +8,11 @@
  *
  * Return: Always EXIT_SUCCESS.
  */
-zdlistint_t *add_dnodeint(dlistint_t **head, const int n)
+dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 {
-	dlistint_t *k = NULL;
-	dlistint_t *l = NULL;
-	*k = malloc(sizeof(dlistint_t));
-	*t = malloc(sizeof(dlistint_t));
+	dlistint_t *k = malloc(sizeof(dlistint_t));
+	dlistint_t *t = malloc(sizeof(dlistint_t));
+
 	if (k == NULL)
 		return (NULL);
 	k->n = n;
@@ -21,13 +20,13 @@ zdlistint_t *add_dnodeint(dlistint_t **head, const int n)
 	k->next = NULL;
 	if (*head == NULL)
 	{
-		begin->next = NULL;
-		*head = begin;
+		k->next = NULL;
+		*head = k;
 		return (*head);
 	}
 	t = *head;
 	k->next = t;
 	t->prev = k;
-	*head = begin;
-	return (begin);
+	*head = k;
+	return (k);
 }
