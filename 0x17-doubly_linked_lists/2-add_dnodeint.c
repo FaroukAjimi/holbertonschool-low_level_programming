@@ -4,8 +4,9 @@
 #include "lists.h"
 
 /**
- * main - check the code for Holberton School students.
- *
+ * add_dnodeint - check the code for Holberton School students.
+ *@head : h
+ *@n : n
  * Return: Always EXIT_SUCCESS.
  */
 dlistint_t *add_dnodeint(dlistint_t **head, const int n)
