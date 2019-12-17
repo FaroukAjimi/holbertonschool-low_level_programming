@@ -11,14 +11,23 @@
 zdlistint_t *add_dnodeint(dlistint_t **head, const int n)
 {
 	dlistint_t *k = NULL;
-
-	k = malloc(sizeof(*k));
-	if (k)
+	dlistint_t *l = NULL;
+	*k = malloc(sizeof(dlistint_t));
+	*t = malloc(sizeof(dlistint_t));
+	if (k == NULL)
+		return (NULL);
+	k->n = n;
+	k->prev = NULL;
+	k->next = NULL;
+	if (*head == NULL)
 	{
-		k->n = n;
-		k->next = *head;
-		k->prev = NULL;
-		*head = k;
+		begin->next = NULL;
+		*head = begin;
+		return (*head);
 	}
-	return (k);
+	t = *head;
+	k->next = t;
+	t->prev = k;
+	*head = begin;
+	return (begin);
 }
