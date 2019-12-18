@@ -1,0 +1,21 @@
+#!/bin/bash
+find . .. -name "_putchar.c" | head -n 1
+find . .. -name "*islower.c" | head -n 1
+find . .. -name "*isalpha.c" | head -n 1
+find . .. -name "*abs.c" | head -n 1
+find . .. -name "*isupper.c" | head -n 1
+find . .. -name "*isdigit.c" | head -n 1
+find . .. -name "*strlen.c" | head -n 1
+find . .. -name "*puts.c" | head -n 1
+find . .. -name "*strcpy.c" | head -n 1
+find . .. -name "*atoi.c" | head -n 1
+find . .. -name "*strcat.c" | head -n 1
+find . .. -name "*strncat.c" | head -n 1
+find . .. -name "*strncpy.c" | head -n 1
+find . .. -name "*strcmp.c" | head -n 1
+find . .. -name "*memset.c" | head -n 1
+find . .. -name "*memcpy.c" | head -n 1
+find . .. -name "*strchr.c" | head -n 1
+find . .. -name "*strspn.c" | head -n 1
+find . .. -name "*strpbrk.c" | head -n 1
+find . .. -name "*strstr.c" | head -n 1
